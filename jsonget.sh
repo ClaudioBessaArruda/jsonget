@@ -14,7 +14,10 @@
 # GNU General Public License for more details.
 
 # jsonget.sh file key
-if [ -f "$1" ]; then
+if [ -f "$1" -a -f "$2" ]; then
+        echo "ERROR - Both parameters are files"
+        exit 1
+elif [ -f "$1" ]; then
         grep -Poi "((?:(\"($2)\":)(?:( *\")\K))[^\"]*)" $1 | head -n 1
         exit 0
 # jsonget.sh key file
@@ -24,3 +27,4 @@ elif [ -f "$2" ]; then
 else
         echo "ERROR - No file was found in parameters"
         exit 1
+fi
