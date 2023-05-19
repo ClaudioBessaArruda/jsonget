@@ -1,5 +1,6 @@
 # jsonget
 ## Returns json value from first match key, case insensitive.
+## It uses grep PCRE.
 
 Either way is valid: `./jsonget.sh file keyname` or `./jsonget.sh keyname file`.
 
