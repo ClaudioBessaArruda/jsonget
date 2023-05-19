@@ -1,5 +1,7 @@
 # jsonget
-## Returns json value from first match key.
+## Returns json value from first match key, case insensitive.
+
+Either way is valid: `./jsonget.sh file keyname` or `./jsonget.sh keyname file`.
 
 ## Copyright 2023 Claudio Bessa
 
