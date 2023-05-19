@@ -1,5 +1,5 @@
 # jsonget
-## Returns json value from first match key, e.g.
+## Returns json value from first match key.
 
 ## Copyright 2023 Claudio Bessa
 
