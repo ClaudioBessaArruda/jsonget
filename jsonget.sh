@@ -13,10 +13,11 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 
-# jsonget.sh file key
+
 if [ -f "$1" -a -f "$2" ]; then
         echo "ERROR - Both parameters are files"
         exit 1
+# jsonget.sh file key
 elif [ -f "$1" ]; then
         grep -Poi "((?:(\"($2)\":)(?:( *\")\K))[^\"]*)" $1 | head -n 1
         exit 0
